@@ -53,4 +53,3 @@ let currentFlow=0;
 const nodes=[...document.querySelectorAll('.flow-node')];
 function selectFlow(i){currentFlow=i;nodes.forEach((n,j)=>n.classList.toggle('active',i===j));document.getElementById('flowTitle').textContent=flowData[i].title;document.getElementById('flowDescription').textContent=flowData[i].description;document.getElementById('flowCount').textContent=`TAHAP ${String(i+1).padStart(2,'0')} / 05`;}
 nodes.forEach((n,i)=>n.addEventListener('click',()=>selectFlow(i)));
-</script>
