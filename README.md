@@ -30,11 +30,11 @@ main{max-width:1160px;margin:auto;padding:42px 22px 80px}.section{margin:0 0 64p
 <div class="notice"><span style="font-size:25px">💡</span><div><strong >Ingat: IPAL bukan sekadar tempat pembuangan.</strong><p >IPAL merupakan sistem pengolahan. Air hasil olahan tetap harus diperiksa dan dikelola sesuai baku mutu serta ketentuan yang berlaku.</p></div></div></section>
 <section class="section" id="alur"><div class="section-head"><div><div class="kicker">02 / Ikuti perjalanannya</div><h2 >Peta diagram alur perjalanan air kampus</h2><p class="section-intro" >Pilih setiap tahap untuk melihat apa yang biasanya terjadi. Diagram ini merupakan contoh umum—sesuaikan dengan jaringan dan IPAL kampus yang sebenarnya.</p></div></div>
 <div class="flow-wrap"><div class="flow-caption"><p><strong>Alur ilustratif:</strong> dari sumber penggunaan sampai keluaran pengolahan</p><span class="pill">Pilih tahap ↓</span></div><div class="flowchart" id="flowchart">
-<button class="flow-node active" data-step="0"><span class="nicon">🚰</span><strong >Sumber air & penggunaan</strong><small >Toilet, wastafel, kantin, laboratorium</small></button>
-<button class="flow-node" data-step="1"><span class="nicon">🕳️</span><strong >Saluran pengumpul</strong><small >Air limbah dialirkan melalui jaringan pipa</small></button>
-<button class="flow-node" data-step="2"><span class="nicon">🧺</span><strong >Pra-pengolahan</strong><small >Penyaringan dan pemisahan material kasar</small></button>
-<button class="flow-node" data-step="3"><span class="nicon">⚙️</span><strong >Pengolahan utama</strong><small >Proses fisik, kimia, atau biologis</small></button>
-<button class="flow-node" data-step="4"><span class="nicon">🌊</span><strong >Pemeriksaan & keluaran</strong><small >Uji kualitas sebelum dibuang/digunakan kembali</small></button>
+<button class="flow-node active" data-step="0"><span class="nicon">🚰</span><strong >Kolam sedimen</strong><small >Toilet, wastafel, kantin, laboratorium</small></button>
+<button class="flow-node" data-step="1"><span class="nicon">🕳️</span><strong >Bak intake</strong><small >Penyaringan awal air limbah</small></button>
+<button class="flow-node" data-step="2"><span class="nicon">🧺</span><strong >Bak MOL</strong><small >Pengolahan secara biologi-aerob</small></button>
+<button class="flow-node" data-step="3"><span class="nicon">⚙️</span><strong >Bak indikasi</strong><small >Penampungan & pemeriksaan sebelum dibuang/digunakan kembali</small></button>
+<button class="flow-node" data-step="4"><span class="nicon">🌊</span><strong >DAM/bendungan</strong><small >penyimpanan air yang dapat digunakan kembali</small></button>
 </div><div class="flow-detail"><div><strong id="flowTitle">1. Sumber air & penggunaan</strong><p id="flowDescription">Air digunakan untuk aktivitas kampus. Setelah dipakai, kualitasnya berubah dan dapat menjadi air limbah domestik atau limbah khusus yang perlu ditangani sesuai sumbernya.</p></div><span class="step-count" id="flowCount">TAHAP 01 / 05</span></div><p class="map-note">Catatan: air hujan, air pendingin, dan limbah laboratorium dapat memiliki jalur berbeda. Jangan menganggap seluruh aliran kampus masuk ke satu IPAL tanpa verifikasi lapangan.</p></div></section>
 <section class="section" id="kuis"><div class="section-head"><div><div class="kicker">03 / Uji pemahaman</div><h2 data-editable="true">Siap menguji pemahamanmu?</h2><p class="section-intro" data-editable="true">Setelah membaca materi IPAL dan memahami perjalanan air di lingkungan kampus, lanjutkan ke kuis untuk menguji pemahamanmu.</p></div></div>
 <div class="quiz-layout"><aside class="quiz-side"><div class="kicker" style="color:var(--lime)">TANTANGAN LANJUTAN</div><h3 data-editable="true">Perjalanan air sudah kamu ikuti. Sekarang, buktikan pemahamanmu!</h3><p data-editable="true">Tekan tombol di bawah untuk membuka kuis. Kuis akan dibuka di tab baru, jadi halaman materi ini tetap bisa kamu akses.</p><a class="btn-primary" href="https://wayground.com/join?gc=66554659" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;justify-content:center;text-decoration:none;margin-top:12px">Mulai kuis di Wayground ↗</a></aside>
@@ -43,11 +43,11 @@ main{max-width:1160px;margin:auto;padding:42px 22px 80px}.section{margin:0 0 64p
 <script>
 const originalHTML = document.documentElement.outerHTML;
 const flowData=[
-{title:"1. Sumber air & penggunaan",description:"Air digunakan untuk aktivitas kampus. Setelah dipakai, kualitasnya berubah dan dapat menjadi air limbah domestik atau limbah khusus yang perlu ditangani sesuai sumbernya."},
-{title:"2. Saluran pengumpul",description:"Jaringan pipa atau saluran membawa air limbah menuju unit pengolahan. Pemisahan aliran khusus—misalnya limbah laboratorium—harus mengikuti rancangan dan prosedur kampus."},
-{title:"3. Pra-pengolahan",description:"Penyaringan, pemisahan pasir, atau penangkap lemak dapat digunakan untuk menahan sampah dan material tertentu sebelum proses berikutnya. Jenis unit bergantung pada desain IPAL."},
-{title:"4. Pengolahan utama",description:"Pengolahan dapat memadukan proses fisik, kimia, dan biologis untuk menurunkan kandungan pencemar. Teknologi dan urutannya berbeda sesuai jenis serta debit air limbah."},
-{title:"5. Pemeriksaan & keluaran",description:"Kualitas air hasil olahan perlu dipantau berdasarkan parameter dan baku mutu yang berlaku. Air hanya boleh dibuang atau digunakan kembali sesuai persyaratan yang ditetapkan."}
+{title:"1. Kolam sedimen",description:"Fungsi: menampung/mengendapkan air limbah rumah tangga yang akan masuk ke IPAL."},
+{title:"2. Bak intake",description:"Fungsi: penyaringan awal air limbah yang mengandung polutan lemak/padatan yang masuk ke IPAL."},
+{title:"3. Bak MOL (Mikroorganisme Lokal)",description:"Fungsi: proses pengolahan air limbah secara biologi-aerob. Berfungsi untuk mengurangi polutan dengan bakteri aerob sehingga limbah menjadi jernih dan tidak berbau."},
+{title:"4. Bak indikasi",description:"Fungsi: menampung air limbah yang telah diolah sehingga dapat dilihat kualitas air limbah sebelum dimanfaatkan atau dibuang ke sungai/DAM."},
+{title:"5. DAM/bendungan",description:"Fungsi: mengumpulkan/menyimpan air termasuk dari proses IPAL yang bisa digunakan untuk berbagai keperluan, seperti irigasi pertanian, penyediaan air minum, pengendalian banjir, rekreasi, dan olah raga air."}
 ];
 let currentFlow=0;
 const nodes=[...document.querySelectorAll('.flow-node')];
